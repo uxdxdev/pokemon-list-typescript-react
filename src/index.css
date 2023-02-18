@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson Hyperlegible&display=swap:400,700');
+
+:root {
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Atkinson Hyperlegible';
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-image: linear-gradient(
+    to right,
+    #eea2a2 0%,
+    #bbc1bf 19%,
+    #57c6e1 42%,
+    #b49fda 79%,
+    #7ac5d8 100%
+  );
+
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+p {
+  margin: 0;
+}
+
+code {
+  font-family: 'Atkinson Hyperlegible';
+}
+.fighting {
+  background-image: linear-gradient(120deg, #fc9477 0%, #89fff3 100%);
+}
+.ghost {
+  background-image: linear-gradient(to top, #d4fbff 0%, #c2e9ff 100%);
+}
+.electric {
+  background-image: linear-gradient(to right, #ffe873 0%, #fed400 100%);
+}
+.bug {
+  background-image: linear-gradient(to top, #fbf5ed 0%, #eacda3 100%);
+}
+.poison {
+  background-image: linear-gradient(to top, #fa43a2 0%, #bfd9fe 100%);
+}
+.normal {
+  background-image: linear-gradient(-225deg, #d5fcf0 0%, #fddcf6 100%);
+}
+.fairy {
+  background-image: linear-gradient(
+    to top,
+    #ff9a9e 0%,
+    #fecfef 99%,
+    #fecfef 100%
+  );
+}
+.fire {
+  background-image: linear-gradient(120deg, #f6d465 50%, #ff5a2d 100%);
+}
+.rock {
+  background-image: linear-gradient(120deg, #3d3d3d 0%, #b8b8b8 100%);
+}
+.grass {
+  background-image: linear-gradient(120deg, #d4fc79 0%, #33ec4b 100%);
+}
+.water {
+  background-image: linear-gradient(120deg, #a8a8ff 0%, #006aff 100%);
+}
+.ground {
+  background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 100%);
+}
+.psychic {
+  background-image: linear-gradient(315deg, #e600ff 0%, #ffffff 75%);
+}
+.dragon {
+  background-image: linear-gradient(315deg, #ff0000 0%, #00d9ff 100%);
+}
+.flying {
+  background-image: linear-gradient(315deg, #ffffff 0%, #0095ff 100%);
+}
+.steel {
+  background-image: linear-gradient(315deg, #8ecdfe 0%, #747474 100%);
+}
+.dark {
+  background-image: linear-gradient(315deg, #6a00ff 0%, #4e4e4e 100%);
+}
+.ice {
+  background-image: linear-gradient(315deg, #ffffff 0%, #00ddff 100%);
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+}
+
+.app-container h1 {
+  width: 0ch;
+  color: rgb(38, 16, 236);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: text 4s steps(15) infinite alternate;
+}
+
+@keyframes text {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 15ch;
+    color: rgb(218, 55, 5);
+  }
+}
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.all-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumb-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0.2rem;
+  margin: 0.3rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  min-width: 160px;
+  text-align: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+}
+
+.thumb-container .number {
+  color: black;
+  margin: 0 0 0.5rem 0;
+}
+
+.thumb-container img {
+  width: 120px;
+  height: 120px;
+}
+
+.thumb-container small {
+  text-transform: capitalize;
+  border-radius: 0.2rem;
+}
+
+.detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.load-more {
+  background-color: #76daff;
+  background-image: linear-gradient(315deg, #76daff 0%, #fcd000 74%);
+  border: 1px solid black;
+  font-family: 'Atkinson Hyperlegible';
+}
+
+.title {
+  font-weight: 700;
+}
+
+.button {
+  color: black;
+}
+
+button:hover {
+  background-color: #ff0000;
+  background-image: linear-gradient(315deg, #ff0000 0%, #ffed00 74%);
+}
+.pokeinfo {
+  margin: 0 0.7rem;
+  border: 1px solid black;
+  font-family: 'Atkinson Hyperlegible';
+  background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+}
+
+.pokeinfo:hover {
+  background-image: linear-gradient(
+    -20deg,
+    #ddd6f3 0%,
+    #faaca8 100%,
+    #faaca8 100%
+  );
+}
